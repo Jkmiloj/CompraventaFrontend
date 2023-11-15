@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  img: string = "c:\KMILO\SOFTWARE KMILO\Compraventa\CompraventaFrontend\src\home.jpg";
+  img: string = "assets/home.jpg";
 
 }

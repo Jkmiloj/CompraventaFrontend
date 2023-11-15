@@ -13,6 +13,9 @@ import { EliminarComponent } from './compraventa/components/eliminar/eliminar.co
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NuevaPersonaComponent } from './compraventa/components/nueva-persona/nueva-persona.component';
 import { FormularioPersonaComponent } from './compraventa/components/formulario-persona/formulario-persona.component';
+import { HomeComponent } from './compraventa/components/home/home.component';
+import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './compraventa/components/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -20,12 +23,14 @@ import { FormularioPersonaComponent } from './compraventa/components/formulario-
     AppComponent,
     PersonaComponent,
     FormularioComponent,
-    /*CrearComponent,
+    CrearComponent,
     LeerComponent,
     ActualizarComponent,
     EliminarComponent,
     NuevaPersonaComponent,
-    FormularioPersonaComponent*/
+    FormularioPersonaComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -33,7 +38,7 @@ import { FormularioPersonaComponent } from './compraventa/components/formulario-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 
   providers: [PersonaService],

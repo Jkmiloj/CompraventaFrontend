@@ -10,6 +10,14 @@ export class PersonaService {
 
     private personas: Persona[] = [];
 
+    private urlPersonas = 'http://localhost:8080/traer-todo';
+
+    constructor(private http: HttpClient){ }
+
+    public getData(): Observable<any>{
+        return this.http.get<any>(this.urlPersonas)
+    }
+
     guardarPersona(persona: Persona) {
         // Agrega la nueva persona a la lista
         this.personas.push(persona);

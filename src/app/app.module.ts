@@ -16,6 +16,7 @@ import { FormularioPersonaComponent } from './compraventa/components/formulario-
 import { HomeComponent } from './compraventa/components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './compraventa/components/page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { PageNotFoundComponent } from './compraventa/components/page-not-found/p
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 
   providers: [PersonaService],

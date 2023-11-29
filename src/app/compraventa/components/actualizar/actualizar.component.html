@@ -4,9 +4,10 @@
     </div>
 </div>
 
-<table class="table mt-3" >
+<table class="table mt-3" table-hover table-bordered>
     <thead>
         <tr>
+            <th>N°</th>
             <th>Cédula</th>
             <th>Nombre</th>
             <th>Apellido1</th>
@@ -16,15 +17,17 @@
             <th>Estado</th>
         </tr>
     </thead>
+    
     <tbody>
-        <tr *ngFor="let persona of data">
-            <td>{{ persona.cc }}</td>
-            <td>{{ persona.nombre }}</td>
-            <td>{{ persona.apellido1 }}</td>
-            <td>{{ persona.apellido2 }}</td>
-            <td>{{ persona.edad }}</td>
-            <td>{{ persona.genero }}</td>
-            <td>{{ persona.estado }}</td>
+        <tr *ngFor="let persona of personas; let item=index">
+            <th scope="row">{{item}}</th>
+            <td>{{persona.cc}}</td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.apellido1}}</td>
+            <td>{{persona.apellido2}}</td>
+            <td>{{persona.edad}}</td>
+            <td>{{persona.genero}}</td>
+            <td>{{persona.estado}}</td>
         </tr>
     </tbody>
 </table>

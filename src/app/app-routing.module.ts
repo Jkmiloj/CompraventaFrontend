@@ -12,7 +12,6 @@ import { PageNotFoundComponent } from './compraventa/components/page-not-found/p
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  /*{path: '', redirectTo: '/persona', pathMatch: 'full'},*/
   {path: 'persona',component: PersonaComponent},
   {path: 'formulario',component: FormularioComponent},
   {path: 'actualizar', component: ActualizarComponent},
